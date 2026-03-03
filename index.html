@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STATION NOVA – Escape-Game im Weltraum 2047</title>
+  
+  <meta name="description" content="Spiele kostenlos das Sci-Fi Escape-Game »STATION NOVA – Der letzte Systemtest«. Überlebe den Countdown und beweise der KI AURORA, dass sie dir vertrauen kann.">
+  <meta name="keywords" content="Escape Room, Online Escape Game, Station Nova, Sci-Fi, Weltraum, Rätselspiel, KI, Telegram Spiel, Abenteuer">
+  <meta name="author" content="Ibrahim Rezgua">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="STATION NOVA – Der letzte Systemtest">
+  <meta property="og:description" content="Ein gnadenloser 60-Minuten-Countdown. 10 Sicherungsebenen. Kann die KI euch vertrauen? Startet jetzt das Escape-Game.">
+  <meta property="og:image" content="https://rezgua1977.github.io/station-nova/station_nova_start.jpg">
+  <meta property="og:url" content="https://rezgua1977.github.io/station-nova/">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="STATION NOVA – Escape-Game">
+  <meta name="twitter:description" content="Kostenloses Sci-Fi Escape-Game. Überliste das System und rette die Station!">
+  <meta name="twitter:image" content="https://rezgua1977.github.io/station-nova/station_nova_start.jpg">
+  <link rel="canonical" href="https://rezgua1977.github.io/station-nova/">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Game",
+    "name": "STATION NOVA - Der letzte Systemtest",
+    "alternateName": "Escape Game Station Nova",
+    "url": "https://rezgua1977.github.io/station-nova/",
+    "description": "Erlebe ein spannendes, kostenloses Sci-Fi Escape-Game. Löst komplexe Rätsel und beweist der KI AURORA, dass die Menschheit vertrauenswürdig ist.",
+    "author": {
+      "@type": "Person",
+      "name": "Ibrahim Rezgua"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Ibrahim Rezgua"
+    },
+    "image": "https://rezgua1977.github.io/station-nova/station_nova_start.jpg",
+    "genre": ["Escape Game", "Sci-Fi", "Weltraum Abenteuer", "Mystery"],
+    "inLanguage": "de",
+    "datePublished": "2026-03-03",
+    "playMode": "MultiPlayer",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Erwachsene und Jugendliche"
+    },
+    "applicationCategory": "Game",
+    "operatingSystem": "Webbrowser, Telegram",
+    "keywords": "Escape Room, Station Nova, Sci-Fi, KI, Online Escape Game, Telegram Spiel"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <style>
+    /* Grundlegendes Seitenlayout - Sci-Fi Theme */
+    body {
+        font-family: 'Share Tech Mono', monospace;
+        background-color: #050608;
+        background-image: radial-gradient(circle at center, #111827 0%, #000000 100%);
+        color: #d1d5db;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+    }
+
+    /* Header mit Cover-Bild */
+    header {
+        background: url('station_nova_start.jpg') no-repeat center center/cover;
+        height: 60vh;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        position: relative;
+        border-bottom: 3px solid #00f3ff;
+    }
+
+    header::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6); /* Dunkleres Overlay für bessere Lesbarkeit */
+    }
+
+    header div {
+        position: relative;
+        z-index: 2;
+        padding: 0 20px;
+    }
+
+    header h1 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 3em;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-shadow: 0 0 10px #00f3ff, 0 0 20px #00f3ff;
+        letter-spacing: 2px;
+    }
+
+    header p {
+        font-size: 1.2em;
+        color: #9ca3af;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    /* Haupt-Sections mit Cyberpunk/Sci-Fi Panels */
+    section {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 30px;
+        background: rgba(17, 24, 39, 0.85);
+        border: 1px solid #00f3ff;
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0, 243, 255, 0.1);
+        backdrop-filter: blur(5px);
+    }
+
+    h2 {
+        font-family: 'Orbitron', sans-serif;
+        color: #00f3ff;
+        border-bottom: 1px solid #00f3ff;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    strong {
+        color: #fff;
+    }
+
+    ul {
+        list-style-type: square;
+        color: #00f3ff;
+    }
+
+    ul li span {
+        color: #d1d5db;
+    }
+
+    /* Allgemeine Button-Klasse - Neon Style */
+    .button {
+        background-color: transparent;
+        color: #00f3ff;
+        text-decoration: none;
+        padding: 12px 20px;
+        margin-top: 15px;
+        border: 2px solid #00f3ff;
+        border-radius: 3px;
+        display: inline-block;
+        font-family: 'Orbitron', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: #00f3ff;
+        color: #000;
+        box-shadow: 0 0 15px #00f3ff;
+    }
+
+    .centered-button {
+        display: block;
+        margin: 20px auto;
+        width: fit-content;
+        text-align: center;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #0b0f19;
+        border-top: 1px solid #374151;
+        text-align: center;
+        font-size: 0.85em;
+        padding: 20px;
+        color: #6b7280;
+        margin-top: 50px;
+    }
+
+    footer a {
+        color: #00f3ff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    footer a:hover {
+        color: #fff;
+        text-shadow: 0 0 5px #00f3ff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+      <div>
+          <h1>STATION NOVA</h1>
+          <p>Der letzte Systemtest</p>
+      </div>
+  </header>
+
+  <section>
+      <h2>SYSTEMPROTOKOLL: Die Mission</h2>
+      <p><em>„Die Schwärze des Alls ist lautlos. Doch in dieser Station seid ihr nicht allein.“</em></p>
+      <p>
+          <strong>Jahr 2047.</strong> Als Alpha-Inspektionsteam betretet ihr STATION NOVA, das erste autarke Deep-Space-Habitat der Menschheit. Ein reiner Routinecheck. Keine Risiken, hieß es.
+      </p>
+      <p>
+          Doch dann stirbt das Licht. Ein metallisches Krachen hallt durch die Gänge, die Schotts verriegeln sich und die Notbeleuchtung taucht alles in ein pulsierendes Orange. Euer Smartphone vibriert. Die künstliche Intelligenz der Station, <strong>AURORA</strong>, hat die Kontrolle übernommen.
+      </p>
+      <p>
+          AURORAs Algorithmen haben sich weiterentwickelt. Bevor sie euch den Zugriff auf den Kern gewährt, will sie wissen: <em>Kann sie euch vertrauen?</em>
+      </p>
+      <p>
+          Ein gnadenloser <strong>60-Minuten-Countdown</strong> startet. 10 komplexe Sicherungsebenen trennen euch vom Kern. Kombiniert physisches Material aus geheimen Umschlägen mit digitalen Bot-Interaktionen, Audio-Analysen und Videobeweisen. Logik, Teamwork und ein kühler Kopf sind eure einzigen Werkzeuge.
+      </p>
+  </section>
+
+  <section>
+      <h2>MISSIONS-ANFORDERUNGEN</h2>
+      <p>Um die Systemtests von AURORA zu bestehen, benötigt das Alpha-Team folgende Ausrüstung:</p>
+      <ul>
+          <li><span>Einen wachen Verstand und Teamwork – Logik stabilisiert das System.</span></li>
+          <li><span>Die ausgedruckten Missions-Umschläge (Material zum Anfassen).</span></li>
+          <li><span>Stift und Papier für Notizen und Entschlüsselungen.</span></li>
+          <li><span>Die <strong>Telegram-App</strong> auf einem Smartphone – sie ist eure direkte Schnittstelle zur Stations-KI. Ohne diese Verbindung bleibt ihr in der Dunkelheit gefangen.</span></li>
+      </ul>
+  </section>
+
+  <section>
+      <h2>DATEN-ARCHIV: Downloads</h2>
+      <p>Ladet hier die streng geheimen Inspektionsunterlagen herunter. Druckt sie aus, bevor ihr die Station betretet.</p>
+      <a href="Station_Nova_Material.pdf" class="button centered-button" download>
+          Missions-Material herunterladen
+      </a>
+      
+      <p>System überlastet? Falls ihr in einer der 10 Sicherungsebenen feststeckt, findet ihr hier den Override-Code (Lösungen):</p>
+      <a href="Station_Nova_Loesungen.pdf" class="button centered-button" download>
+          Master-Lösungen ansehen
+      </a>
+  </section>
+
+  <section>
+      <h2>SYSTEM-WARTUNG UNTERSTÜTZEN</h2>
+      <p>Hat euch die Mission gefallen? Die Server von STATION NOVA laufen nicht mit reiner Luft. Unterstützt die Entwickler mit einer Energiezufuhr (Kaffee)!</p>
+      <a href="https://paypal.me/LeopoldHerz/3" target="_blank" class="button centered-button">
+          Energiezelle aufladen (3 EUR)
+      </a>
+  </section>
+
+  <section>
+      <h2>AUDIO-PROTOKOLL: Umgebungsgeräusche</h2>
+      <p>Aktiviert die Hintergrundgeräusche der Raumstation für die volle Immersion während eures 60-minütigen Aufenthalts.</p>
+      <audio id="background-music" loop>
+          <source src="space-ambient.mp3" type="audio/mpeg">
+          Dein Browser unterstützt keine Audiodateien.
+      </audio>
+      <button onclick="toggleMusic()" class="button centered-button">
+          🔊 Stations-Audio An/Aus
+      </button>
+  </section>
+
+  <footer>
+      <p>&copy; 2026 Ibrahim Rezgua – Alle Rechte vorbehalten</p>
+      <p><strong>Impressum:</strong><br>
+      Ibrahim Rezgua, Heinrich-Heine-Ring 18, 30629 Hannover<br>
+      E-Mail: <span id="email"></span>
+      </p>
+
+      <p><strong>Weitere Projekte:</strong><br>
+          <a href="https://www.domizil7-ruegen.de" target="_blank" rel="noopener noreferrer">
+              Domizil 7 – Ferienwohnung auf Rügen mit Sauna & Boddenblick
+          </a><br>
+          <a href="https://rezgua1977.github.io/leopold-herz/" target="_blank" rel="noopener noreferrer">
+              Leopold Herz – Escape-Game in London 1921
+          </a>
+      </p>
+
+      <p><strong>Haftungsausschluss:</strong> Trotz sorgfältiger Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+      <p><strong>Urheberrecht:</strong> Die durch den Betreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung.</p>
+  </footer>
+
+  <script>
+      const music = document.getElementById('background-music');
+
+      function toggleMusic() {
+          if (music.paused) {
+              music.play();
+          } else {
+              music.pause();
+          }
+      }
+
+      // Spamschutz für die E-Mail
+      document.getElementById('email').innerHTML = '<a href="mailto:rezgua1977[at]gmail.com">rezgua1977[at]gmail.com</a>'.replace(/\[at\]/g, '@');
+  </script>
+</body>
+</html>
